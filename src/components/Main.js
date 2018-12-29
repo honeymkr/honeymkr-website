@@ -1,8 +1,9 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import ReactPlayer from 'react-player'
 
 
-import hacker from '../images/hacker-screen.jpg'
+import hacker from '../images/hacker-screenshot.jpg'
 import banner900a from '../images/hacker-900A.jpg'
 import banner900b from "../images/hacker-900B.jpg"
 import banner300a from '../images/hacker-300-250A.jpg'
@@ -15,8 +16,10 @@ import banner160b from '../images/hacker-160-600B.jpg'
 
 import corona from '../images/corona.webp'
 
+
 class Main extends React.Component {
-  render() {
+
+  render(  ) {
 
     let close = <div className="close" onClick={() => {this.props.onCloseArticle()}}></div>
 
@@ -28,8 +31,8 @@ class Main extends React.Component {
           <h2 className="major">Hackerdot.com</h2>
 
           <h3>HTML5 Website</h3>
-          <p>Crypto-inspired Hackerdot.com is a blockchain club based out of Boston. I used <a href="https://createjs.com/" target="_blank" rel="noopener noreferrer">CreateJS </a> 
-          to bring my Photoshop layouts to life.</p>
+          <p>Designed and developed on my own using Adobe Photoshop, Google Images, and Createjs. This is a micro-site slash giant interactive banner that I was inspired to make after my experience of hosting a crypto/blockchain meet-up in Boston this past year.
+          </p>
 
           <span className="image main"> 
           <a href="http://hackerdot.com" rel="noopener noreferrer"  target="_blank" >  <img src={hacker} alt="hacker-homescreen" /> </a> 
@@ -38,31 +41,8 @@ class Main extends React.Component {
        
           
           <h3>Rich Interactive Banners</h3>
-          <p>Here are some banners I design and deveoloped using Adobe Photoshop + Createjs. The theme is Vaporwave and mis-information expressed visually.
-          Click on any of the images to launch its corresponding banner in a new window:</p>
+          <p>In the name of fun, discovery and challenge, I created a small banner campaign for the Hackerdot.com meet-up. I designed and developed these on my own using Createjs and Photoshop.</p>
 
-         <span className="image main">
-         <a href="https://hackerdot.com/banners/hacker_90-900A/" target="_blank" rel="noopener noreferrer" title="900-90 banner"> 
-         <img src={banner900a} alt="banner1" /> </a>
-         </span>
-
-         <span className="image main">
-         <a href="https://hackerdot.com/banners/hacker_90-900B/" target="_blank"  rel="noopener noreferrer" title="900-90 banner">
-         <img src={banner900b} alt="banner2" />
-         </a>
-         </span>
-
-         <span className="image left">
-         <a href="https://hackerdot.com/banners/hacker_300-600A/" target="_blank"  rel="noopener noreferrer" title="300-600 banner">
-         <img src={banner600a} alt="banner3" />
-         </a>
-         </span>
-
-         <span className="image left">
-         <a href="https://hackerdot.com/banners/hacker_300-600B/" target="_blank" rel="noopener noreferrer" title="300-600 banner">
-         <img src={banner600b} alt="banner4" />
-         </a>
-         </span>
 
           <span className="image left">
           <a href="https://hackerdot.com/banners/hacker_160-600A/" target="_blank" rel="noopener noreferrer" title="160-600 banner">
@@ -76,7 +56,32 @@ class Main extends React.Component {
          </a>
          </span>
 
-          <span className="image left">
+
+         <span className="image left">
+         <a href="https://hackerdot.com/banners/hacker_90-900A/" target="_blank" rel="noopener noreferrer" title="900-90 banner"> 
+         <img src={banner900a} alt="banner1" /> </a>
+         </span>
+
+         <span className="image left">
+         <a href="https://hackerdot.com/banners/hacker_90-900B/" target="_blank"  rel="noopener noreferrer" title="900-90 banner">
+         <img src={banner900b} alt="banner2" />
+         </a>
+         </span>
+
+
+         <span className="image left">
+         <a href="https://hackerdot.com/banners/hacker_300-600A/" target="_blank"  rel="noopener noreferrer" title="300-600 banner">
+         <img src={banner600a} alt="banner3" />
+         </a>
+         </span>
+
+         <span className="image left">
+         <a href="https://hackerdot.com/banners/hacker_300-600B/" target="_blank" rel="noopener noreferrer" title="300-600 banner">
+         <img src={banner600b} alt="banner4" />
+         </a>
+         </span>
+
+         <span className="image left">
           <a href="https://hackerdot.com/banners/hacker_300-250A/" target="_blank" rel="noopener noreferrer" title="300-250 banner">
          <img src={banner300a} alt="banner7" />
          </a>
@@ -87,6 +92,10 @@ class Main extends React.Component {
          <img src={banner300b} alt="banner8" />
         </a>
          </span>
+
+
+
+       
          
         
         {close}
@@ -95,18 +104,40 @@ class Main extends React.Component {
 
 
 
-        <article id="corona" className={`${this.props.article === 'corona' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`} style={{display:'none'}}>
-          <h2 className="major">Corona</h2>
-          <h3>Rich Interactive Banner</h3>
-          <p>Responsively designed ad banner for Corona to use in various advertising platforms.</p>
 
-          <span className="image main">
-          <a href="https://honeymkr.com/projects/corona/" target="_blank" rel="noopener noreferrer" title="Responsive Design + Flash">
-          <img src={corona} alt="" /></a>
-          </span>
+
+
+        <article id="motion" className={`${this.props.article === 'motion' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`} style={{display:'none'}}>
+          <h2 className="major">Motion Graphics</h2>
       
+        <h3>WaterBaby FungiStatic 3000</h3>
+          <ReactPlayer url='https://videos.ctfassets.net/c0blkdc0ebdu/7mMZBo8x8WkKk2KIuk4GSW/d5cc36e7a3026a262b798ecc9b69002d/WaterBaby-700.mp4' 
+              width="560" height="560" controls />
+      
+        <h4>Inspired on one of my first and favorite projects from early 2000's</h4>
+
           {close}
         </article>
+
+
+
+        <article id="past-work" className={`${this.props.article === 'past-work' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`} style={{display:'none'}}>
+          <h2 className="major">Past Work</h2>
+      
+          <span className="image left">
+      
+         <img src={corona} alt="banner8" />
+      
+         </span>
+
+       
+
+          {close}
+        </article>
+
+
+
+
 
       </div>
     )
@@ -122,4 +153,4 @@ Main.propTypes = {
   setWrapperRef: PropTypes.func.isRequired,
 }
 
-export default Main
+ export default Main
