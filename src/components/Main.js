@@ -1,6 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import ReactPlayer from 'react-player'
+import {graphql} from 'gatsby'
 
 
 import hacker from '../images/hacker-screenshot.jpg'
@@ -12,21 +13,21 @@ import banner600a from '../images/hacker-300-600A.jpg'
 import banner600b from '../images/hacker-300-600B.jpg'
 import banner160a from '../images/hacker-160-600A.jpg'
 import banner160b from '../images/hacker-160-600B.jpg'
-
-
 import corona from '../images/corona.webp'
 
 
 class Main extends React.Component {
 
-  render(  ) {
+  render() {
 
     let close = <div className="close" onClick={() => {this.props.onCloseArticle()}}></div>
 
     return (
-      <div ref={this.props.setWrapperRef} id="main" style={this.props.timeout ? {display: 'flex'} : {display: 'none'}}>
+      <div ref={this.props.setWrapperRef} id="main" 
+        style={this.props.timeout ? {display: 'flex'} : {display: 'none'}}>
 
-        <article id="hacker" className={`${this.props.article === 'hacker' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`} style={{display:'none'}}>
+        <article id="hacker" className={`${this.props.article === 'hacker' ? 'active' : ''} 
+          ${this.props.articleTimeout ? 'timeout' : ''}`} style={{display:'none'}}>
           
           <h2 className="major">Hackerdot.com</h2>
 
@@ -95,16 +96,11 @@ class Main extends React.Component {
 
 
 
-       
-         
+      
         
         {close}
        
         </article>
-
-
-
-
 
 
         <article id="motion" className={`${this.props.article === 'motion' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`} style={{display:'none'}}>
@@ -114,18 +110,18 @@ class Main extends React.Component {
           <ReactPlayer url='https://videos.ctfassets.net/c0blkdc0ebdu/7mMZBo8x8WkKk2KIuk4GSW/d5cc36e7a3026a262b798ecc9b69002d/WaterBaby-700.mp4' 
               width="560" height="560" controls />
       
-        <h4>Inspired on one of my first and favorite projects from early 2000's</h4>
-
+        <h4>Static-fungi and underwater babies. Unique bumper for honeymkr's capabilities.</h4>
+        <h3>Art Direction and Animation: Jason Faulkner</h3>
+      
           {close}
         </article>
-
-
 
         <article id="past-work" className={`${this.props.article === 'past-work' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`} style={{display:'none'}}>
           <h2 className="major">Past Work</h2>
       
           <span className="image left">
       
+
          <img src={corona} alt="banner8" />
       
          </span>
@@ -134,10 +130,6 @@ class Main extends React.Component {
 
           {close}
         </article>
-
-
-
-
 
       </div>
     )
@@ -154,3 +146,18 @@ Main.propTypes = {
 }
 
  export default Main
+
+export const query = graphql`
+query {
+  allContentfulContentType {
+    edges {
+      node {
+        id
+        name
+        description
+      }
+    }
+  }  
+}
+
+`

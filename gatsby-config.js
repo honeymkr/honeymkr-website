@@ -1,11 +1,24 @@
+require("dotenv").config()
+
 module.exports = {
   siteMetadata: {
     title: "HONEYMKR",
     author: "Jason Faulkner",
-    description: "Web development and animation."
+    description: "Motion Design & Web Apps."
   },
   plugins: [
     'gatsby-plugin-react-helmet',
+
+    {
+
+      resolve: 'gatsby-source-contentful',
+      options: {
+        spaceId: process.env.CONTENTFUL_SPACE_ID || '',
+        accessToken: process.env.CONTENTFUL_ACCESS_TOKEN || '',
+      },
+    },
+    
+    
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -18,6 +31,8 @@ module.exports = {
         icon: 'src/images/honeymkr-icon.png', // This path is relative to the root of the site.
       },
     },
+    
+    
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
