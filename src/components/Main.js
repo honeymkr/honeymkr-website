@@ -1,8 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import ReactPlayer from 'react-player'
-import {graphql} from 'gatsby'
-
 
 import hacker from '../images/hacker-screenshot.jpg'
 import banner900a from '../images/hacker-900A.jpg'
@@ -14,11 +12,17 @@ import banner600b from '../images/hacker-300-600B.jpg'
 import banner160a from '../images/hacker-160-600A.jpg'
 import banner160b from '../images/hacker-160-600B.jpg'
 import corona from '../images/corona.webp'
+import lg_ponder from '../images/lg_ponder.jpg'
+import lg_kids from '../images/lg_kids.png'
+import lg_rockers from '../images/lg_rockers.jpg'
+
+
+
 
 
 class Main extends React.Component {
 
-  render() {
+  render(  ) {
 
     let close = <div className="close" onClick={() => {this.props.onCloseArticle()}}></div>
 
@@ -32,7 +36,7 @@ class Main extends React.Component {
           <h2 className="major">Hackerdot.com</h2>
 
           <h3>HTML5 Website</h3>
-          <p>Designed and developed on my own using Adobe Photoshop, Google Images, and Createjs. This is a micro-site slash giant interactive banner that I was inspired to make after my experience of hosting a crypto/blockchain meet-up in Boston this past year.
+          <p>Designed and developed with Adobe Photoshop, Google Images, and Createjs web animation library. This is a micro-site slash giant interactive banner that I was inspired to make after my experience of hosting a crypto/blockchain meet-up in Boston this past year.
           </p>
 
           <span className="image main"> 
@@ -104,31 +108,66 @@ class Main extends React.Component {
 
 
         <article id="motion" className={`${this.props.article === 'motion' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`} style={{display:'none'}}>
+          
+       
           <h2 className="major">Motion Graphics</h2>
-      
-        <h3>WaterBaby FungiStatic 3000</h3>
+
+          <span className="image main"> 
+        <h2>Water Baby FunguStatic 3000</h2>
           <ReactPlayer url='https://videos.ctfassets.net/c0blkdc0ebdu/7mMZBo8x8WkKk2KIuk4GSW/d5cc36e7a3026a262b798ecc9b69002d/WaterBaby-700.mp4' 
               width="560" height="560" controls />
       
-        <h4>Static-fungi and underwater babies. Unique bumper for honeymkr's capabilities.</h4>
-        <h3>Art Direction and Animation: Jason Faulkner</h3>
-      
+        <h3>Gratuitous self-promotion. </h3>
+</span>
+    
+
           {close}
         </article>
 
         <article id="past-work" className={`${this.props.article === 'past-work' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`} style={{display:'none'}}>
           <h2 className="major">Past Work</h2>
+          
       
-          <span className="image left">
+    
+      <span className="image main"> 
+      <h3>LG, 'Rockers': <br/>
+      Banner prototype for client pitch.</h3>
+      <img src={lg_rockers} alt="lg_rockers" />    
+      <h4>MADE WITH: Flash, Actionscript 3</h4>
+      </span>
+     
+   
+
+      <span className="image main"> 
+      <h3>LG, 'Give It A Ponder': <br/>Campaign microsite.</h3>
+      <img src={lg_ponder} alt="lg_ponder" />
+      <h4>MADE WITH: Flash, Actionscript 3.</h4>
+      </span>
+
+      <span className="image main"> 
+      <h3>Colgate, 'Discover Brushing':<br/> Banner prototype.</h3>
+      <img src={lg_kids} alt="kids" />
+      <h4>MADE WITH: Flash, Actionscript 3.</h4>
+      </span>
+
+
+      <span className="image main"> 
+      <h3>Grooveshark, 'Find Your Island': <br/>Banner for campaign.</h3>
+      <img src={corona} alt="corona" />
+      <h4>MADE WITH: Flash, Actionscript 3.</h4>
+      </span>
       
 
-         <img src={corona} alt="banner8" />
-      
-         </span>
+      <span className="image main"> 
+      <h3>Pepsi, 'Globe Logo': <br/>Animation for client pitch.</h3>
+      <ReactPlayer url='../images/pepsi-animation.mp4' 
+              width="560" height="560" controls />
+         
+      <h4>MADE WITH: Adobe Illustrator, Adobe After Effects.</h4>
+    </span>
 
-       
-
-          {close}
+    
+            {close}
         </article>
 
       </div>
@@ -147,17 +186,4 @@ Main.propTypes = {
 
  export default Main
 
-export const query = graphql`
-query {
-  allContentfulContentType {
-    edges {
-      node {
-        id
-        name
-        description
-      }
-    }
-  }  
-}
 
-`
