@@ -113,12 +113,32 @@ class Main extends React.Component {
           <h2 className="major">Motion Graphics</h2>
 
           <span className="image main"> 
-        <h2>Water Baby FunguStatic 3000</h2>
+          <h2>Water Baby FunguStatic</h2>
           <ReactPlayer url='https://videos.ctfassets.net/c0blkdc0ebdu/7mMZBo8x8WkKk2KIuk4GSW/d5cc36e7a3026a262b798ecc9b69002d/WaterBaby-700.mp4' 
               width="560" height="560" controls />
-      
-        <h3>Gratuitous self-promotion. </h3>
-</span>
+          <h3>Gratuitous self-promotion. </h3>
+          </span>
+
+          <span className="image main"> 
+          <h2>Polarized Vortex Effect</h2>
+          <ReactPlayer url='https://videos.ctfassets.net/c0blkdc0ebdu/7CmHZFQLo4DFMkQyyzXV7T/34a98638346658980ac12186e3f9b90d/Final_polarized_4.mp4' 
+              width="560" height="560" controls />
+          <h3>Gratuitous self-promotion. </h3>
+          </span>
+
+          <span className="image main"> 
+          <h2>Cassandre typeface</h2>
+          <ReactPlayer url='https://videos.ctfassets.net/c0blkdc0ebdu/5912nOamCRvMtyuWeBnS63/eb89deef4bfaf3d1cc073b65f368e800/HONEYMKR_CASSANDRE_FINAL.mp4' 
+              width="560" height="560" controls />
+          <h3>Gratuitous self-promotion. </h3>
+          </span>
+
+          <span className="image main"> 
+          <h2>Glitchy Squares</h2>
+          <ReactPlayer url='https://videos.ctfassets.net/c0blkdc0ebdu/3Wd23e7hnY9EuiTEP35jxm/003f3f3c1c34c400bb5dac6a192b5549/honeymkr__6_1.mp4' 
+              width="560" height="560" controls />
+          <h3>Gratuitous self-promotion. </h3>
+          </span>
     
 
           {close}
@@ -160,7 +180,7 @@ class Main extends React.Component {
 
       <span className="image main"> 
       <h3>Pepsi, 'Globe Logo': <br/>Animation for client pitch.</h3>
-      <ReactPlayer url='../images/pepsi-animation.mp4' 
+      <ReactPlayer url='https://videos.ctfassets.net/c0blkdc0ebdu/58PIUtw68SqyHSZusUtIUM/c041c1abe0c1be1f46fb901a9e66d680/pepsi-animation.mp4' 
               width="560" height="560" controls />
          
       <h4>MADE WITH: Adobe Illustrator, Adobe After Effects.</h4>
