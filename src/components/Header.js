@@ -3,9 +3,7 @@ import PropTypes from 'prop-types'
 
 const Header = (props) => (
     <header id="header" style={props.timeout ? {display: 'none'} : {}}>
-        <div className="logo">
-            <span className="icon fa-diamond"></span>
-        </div>
+        <div className="logo"> </div>
         <div className="content">
            
             <div className="inner">
@@ -18,6 +16,7 @@ const Header = (props) => (
             <li><a href="javascript:;" onClick={() => {props.onOpenArticle('motion')}}>MOTION DESIGN</a></li>
                 <li><a href="javascript:;" onClick={() => {props.onOpenArticle('hacker')}}>HACKERDOT.COM</a></li>
                <li><a href="javascript:;" onClick={() => {props.onOpenArticle('past-work')}}>PAST WORK</a></li>
+               <li><a href="javascript:;" onClick={() => {props.onOpenArticle('contact')}}>CONTACT</a></li>
             </ul>
         </nav>
 

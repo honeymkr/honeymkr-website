@@ -48,17 +48,21 @@
 		}
 
 		.logo {
-			width: 5.5rem;
-			height: 5.5rem;
+			width: 6.2rem;
+			height: 5.4rem;
 			line-height: 5.5rem;
-			border: solid _size(border-width) _palette(border);
-			border-radius: 100%;
+			background-image: url(../../images/WHITE_LINE_LOGO.svg )   ; 
+			background-repeat: no-repeat;
+			background-size: 6.2rem;
+			
+			//border: solid _size(border-width) _palette(border);
+			//border-radius: 100%;
 
-			.icon {
-				&:before {
-					font-size: 2rem;
-				}
-			}
+			// .icon {
+			// 	&:before {
+			// 		font-size: 2rem;
+			// 	}
+			// }
 		}
 
 		.content {

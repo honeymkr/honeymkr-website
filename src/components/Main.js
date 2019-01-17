@@ -34,20 +34,20 @@ class Main extends React.Component {
           ${this.props.articleTimeout ? 'timeout' : ''}`} style={{display:'none'}}>
           
           <h2 className="major">Hackerdot.com</h2>
-
-          <h3>HTML5 Website</h3>
-          <p>Designed and developed with Adobe Photoshop, Google Images, and Createjs web animation library. This is a micro-site slash giant interactive banner that I was inspired to make after my experience of hosting a crypto/blockchain meet-up in Boston this past year.
+          <p>Designed and developed with Adobe Photoshop, 
+            Google Images, and Createjs web animation library. 
+            This is a micro-site slash giant interactive banner 
+            that I was inspired to make after my experience of hosting 
+            a crypto/blockchain meet-up in Boston this past year.
           </p>
 
           <span className="image main"> 
+          <h3>HTML5 Website</h3>
           <a href="http://hackerdot.com" rel="noopener noreferrer"  target="_blank" >  <img src={hacker} alt="hacker-homescreen" /> </a> 
           </span>
-
-       
+          <hr/>  
           
-          <h3>Rich Interactive Banners</h3>
-          <p>In the name of fun, discovery and challenge, I created a small banner campaign for the Hackerdot.com meet-up. I designed and developed these on my own using Createjs and Photoshop.</p>
-
+          <h2 className="major" > Rich Interactive Banners</h2>
 
           <span className="image left">
           <a href="https://hackerdot.com/banners/hacker_160-600A/" target="_blank" rel="noopener noreferrer" title="160-600 banner">
@@ -111,6 +111,12 @@ class Main extends React.Component {
           
        
           <h2 className="major">Motion Graphics</h2>
+          <p>A love for motion design has been a driving factor for me as a digital expressionist.
+            Here's some recent work that expands on concepts like write-on lettering
+            and creative direction for self-promotion.
+          </p>
+          <hr/>
+
 
           <span className="image main"> 
           <h2>Water Baby FunguStatic</h2>
@@ -145,7 +151,13 @@ class Main extends React.Component {
         </article>
 
         <article id="past-work" className={`${this.props.article === 'past-work' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`} style={{display:'none'}}>
-          <h2 className="major">Past Work</h2>
+        
+        <h2 className="major">Past Work</h2>
+          <p>I've been designing and developing creative website material for years on my own 
+            and as a freelancer at many of NYC's major advertising agencies: Rapid prototyping for client
+            pitches, web banner campaigns, microsites, front end development. 
+          </p>
+          <hr/>
           
       
     
@@ -188,6 +200,19 @@ class Main extends React.Component {
 
     
             {close}
+        </article>
+
+      
+
+        <article id="contact" className={`${this.props.article === 'contact' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`} style={{display:'none'}}>
+        <h2 className="major">Contact</h2>
+        <h4 className="major">Brooklyn based digital creative.</h4>
+        <h3> Email: honeymkr.nyc (at) gmail</h3>
+        <h3><a href="https://www.instagram.com/honeymkr/" target="_blank"  rel="noopener noreferrer" > instagram.com/honeymkr </a></h3>
+        <h3><a href="https://github.com/honeymkr/" target="_blank"  rel="noopener noreferrer" > github.com/honeymkr </a></h3>
+       
+      
+        {close}
         </article>
 
       </div>
