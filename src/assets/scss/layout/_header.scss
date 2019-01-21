@@ -201,9 +201,14 @@
 			}
 
 			.logo {
-				width: 4.75rem;
-				height: 4.75rem;
+				width: 5rem;
+				height: 4.4rem;
 				line-height: 4.75rem;
+
+				background-image: url(../../images/WHITE_LINE_LOGO.svg )   ; 
+				background-repeat: no-repeat;
+				background-size: 5rem; 
+
 
 				.icon {
 					&:before {
