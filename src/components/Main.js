@@ -17,9 +17,6 @@ import lg_kids from '../images/lg_kids.png'
 import lg_rockers from '../images/lg_rockers.jpg'
 
 
-
-
-
 class Main extends React.Component {
 
   render(  ) {
