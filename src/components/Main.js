@@ -31,11 +31,7 @@ class Main extends React.Component {
           ${this.props.articleTimeout ? 'timeout' : ''}`} style={{display:'none'}}>
           
           <h2 className="major">Hackerdot.com</h2>
-          <p>Designed and developed with Adobe Photoshop, 
-            Google Images, and Createjs web animation library. 
-            This is a micro-site slash giant interactive banner 
-            that I was inspired to make after my experience of hosting 
-            a crypto/blockchain meet-up in Boston this past year.
+          <p>Crypto-Vaperwave inspired microsite using Createjs.
           </p>
 
           <span className="image main"> 
@@ -99,7 +95,6 @@ class Main extends React.Component {
        
         </article>
 
-
         <article id="motion" className={`${this.props.article === 'motion' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`} style={{display:'none'}}>
           
        
@@ -149,8 +144,8 @@ class Main extends React.Component {
         <article id="past-work" className={`${this.props.article === 'past-work' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`} style={{display:'none'}}>
         
         <h2 className="major">Past Work</h2>
-          <p>I've been designing and developing creative website material for years on my own 
-            and as a freelancer at many of NYC's major advertising agencies: Rapid prototyping for client
+          <p>I've been designing and developing creative website material for years typically on my own 
+            as a freelancer at many of NYC's major advertising agencies: Rapid prototyping for client
             pitches, web banner campaigns, microsites, front end development. 
           </p>
           <hr/>
