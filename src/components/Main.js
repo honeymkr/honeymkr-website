@@ -147,7 +147,8 @@ class Main extends React.Component {
           <p>I've been designing and developing creative website material for years typically on my own 
             as a freelancer at many of NYC's major advertising agencies: Rapid prototyping for client
             pitches, web banner campaigns, microsites, front end development. 
-          </p>
+          <br/>
+          Archived, (working) projects are available by request:</p>
           <hr/>
           
       
