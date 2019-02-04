@@ -8,7 +8,7 @@ const Header = (props) => (
            
             <div className="inner">
                 <h1>HONEYMKR</h1>
-                <p>::web applications :: motion design::</p>
+                <p>:: digital expressionism ::</p>
             </div>
         </div>
         <nav>
@@ -16,7 +16,7 @@ const Header = (props) => (
                 <li><a href="javascript:void(0)" onClick={() => {props.onOpenArticle('motion')}}>MOTION DESIGN</a></li>
                 <li><a href="javascript:void(0)" onClick={() => {props.onOpenArticle('hacker')}}>HACKERDOT.COM</a></li>
                 <li><a href="javascript:void(0)" onClick={() => {props.onOpenArticle('past-work')}}>PAST WORK</a></li>
-                <li><a href="javascript:void(0)" onClick={() => {props.onOpenArticle('contact')}}>CONTACT</a></li>
+                <li><a href="javascript:void(0)" onClick={() => {props.onOpenArticle('about')}}>ABOUT</a></li>
             </ul>
         </nav>
 
